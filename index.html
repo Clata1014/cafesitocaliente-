@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Viaje del Grano a Tu Alma - Tu Café</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif; /* Sans-serif legible para cuerpo */
+            background-color: #F5F5F5; /* Un fondo neutro claro, como papel hueso */
+        }
+
+        .font-serif-title {
+            font-family: 'Lora', serif; /* Serif clásica para títulos */
+        }
+
+        .font-manuscript {
+            font-family: 'Dancing Script', cursive; /* Toque manuscrito para acentos */
+        }
+
+        .nav-bg {
+            /* Fondo terroso sutil para la navegación, puedes reemplazarlo con una textura */
+            background-color: #6B4F4F; /* Un marrón terroso */
+        }
+
+        .hero-image-container {
+            height: 70vh; /* Altura de la imagen heroica */
+            overflow: hidden; /* Necesario para algunos efectos parallax */
+            display: flex; /* Para centrar la imagen si es más pequeña */
+            justify-content: center; /* Para centrar la imagen si es más pequeña */
+            align-items: center; /* Para centrar la imagen si es más pequeña */
+        }
+
+        .hero-image {
+            width: 100%; /* Ocupa el ancho del contenedor */
+            height: 100%; /* Ocupa la altura del contenedor */
+            object-fit: cover; /* Cubre el espacio, puede recortar si las proporciones no coinciden */
+        }
+
+        .quienes-somos-dropdown .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #A0937D; /* Ocre/Marrón claro */
+            min-width: 260px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 10;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .quienes-somos-dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .cherry-red-accent {
+            color: #9B2C2C; /* Rojo cereza oscuro, como text-red-800 de Tailwind */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <nav class="nav-bg text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex flex-wrap justify-between items-center">
+            <a href="#" class="font-serif-title text-3xl hover:text-yellow-300 transition-colors">Café "Alma de la Tierra"</a>
+
+            <div class="flex items-center space-x-6 mt-4 md:mt-0">
+                <div class="relative quienes-somos-dropdown">
+                    <button class="font-semibold hover:text-yellow-300 transition-colors focus:outline-none">
+                        QUIÉNES SOMOS
+                    </button>
+                    <div class="dropdown-content text-sm text-yellow-50 p-4 rounded-md">
+                        <p class="italic">"Más que café, somos el puente entre la tierra fértil y tu despertar. Somos las manos que cultivan y el aroma que te conecta."</p>
+                        <a href="#" class="block mt-2 text-xs hover:text-yellow-200 underline">Nuestra Raíz</a>
+                    </div>
+                </div>
+                <div class="contacto-vital text-sm">
+                    <p class="font-semibold mb-1">CONTACTO VITAL:</p>
+                    <div class="flex items-center space-x-1 hover:text-yellow-300 transition-colors">
+                        <svg class="w-4 h-4 inline-block" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        <a href="tel:3434506">3434506</a>
+                    </div>
+                    <div class="flex items-center space-x-1 mt-1 hover:text-yellow-300 transition-colors">
+                        <svg class="w-4 h-4 inline-block" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        <a href="mailto:salon234@hotmail.com">salon234@hotmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-image-container bg-gray-300">
+        <img src="imagenes/venezolanoscampo.jpg" alt="Campesinos recolectando café" class="hero-image">
+    </header>
+
+    <main class="container mx-auto px-6 py-16 bg-white shadow-lg my-8 rounded-lg">
+        <section class="text-center mb-12">
+            <h2 class="font-serif-title text-4xl text-yellow-900 mb-4">El Alma de Nuestra Tierra en Cada Gota</h2>
+            <p class="text-lg text-gray-700 italic max-w-2xl mx-auto">
+                "Cierra los ojos un instante. Siente el murmullo de las montañas donde el sol acaricia cada cereza madura. Ese es el comienzo de nuestra historia, la tuya y la de este café."
+            </p>
+        </section>
+
+        <hr class="my-12 border-yellow-700 border-opacity-50">
+
+        <section>
+            <h3 class="font-serif-title text-3xl text-yellow-800 mb-3 text-center md:text-left">Nuestro Compromiso con el Origen</h3>
+            <div class="md:flex md:space-x-8 items-center">
+                <div class="md:w-2/3 text-gray-700 leading-relaxed space-y-4">
+                    <p>No es solo un grano; es la <strong class="font-semibold text-yellow-900">promesa de la tierra</strong>, nutrida por <strong class="font-semibold text-yellow-900">manos expertas</strong> que entienden sus secretos. Desde la siembra consciente, pasando por la <strong class="font-semibold text-yellow-900">recolección selectiva</strong> –donde solo las cerezas en su punto óptimo de dulzor son elegidas–, hasta el secado paciente bajo el mismo sol que las vio nacer. Cada paso es un <strong class="font-semibold text-yellow-900">ritual</strong>, una danza entre la naturaleza y la tradición.</p>
+                </div>
+                <div class="md:w-1/3 mt-6 md:mt-0">
+                    <img src="imagenes/cafecampesino.png" alt="Café cultivado por campesinos" class="rounded-lg shadow-xl mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-12 border-yellow-700 border-opacity-50">
+
+        <section class="md:flex md:space-x-8 items-center">
+            <div class="md:w-1/3 mt-6 md:mt-0 md:order-1 order-2">
+                <img src="https://images.unsplash.com/photo-1511920183353-30েন্টে35b7732?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Taza de café humeante" class="rounded-lg shadow-xl mx-auto">
+            </div>
+            <div class="md:w-2/3 text-gray-700 leading-relaxed space-y-4 md:order-2 order-1">
+                <p>Este camino, lleno de dedicación y respeto, culmina en tu taza: un elixir oscuro y fragante que no solo despierta tus mañanas, sino que te cuenta, sorbo a sorbo, la crónica de su origen.</p>
+                <p>Te invitamos a ser parte de este viaje, a saborear la diferencia que nace del cuidado y la <strong class="font-semibold text-yellow-900">pasión auténtica</strong>. Más que una bebida, es una experiencia que celebra la vida y el arte del buen café.</p>
+                <div class="mt-8 text-center md:text-left">
+                    <a href="#" class="font-manuscript text-2xl cherry-red-accent hover:text-red-800 transition-colors py-2 px-4 rounded-md inline-block hover:bg-yellow-100">
+                        Descubre nuestros cafés
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="nav-bg text-yellow-100 text-center p-8 mt-12">
+        <p>&copy; <span id="currentYear"></span> Café "Alma de la Tierra". Todos los derechos reservados.</p>
+        <p class="font-manuscript text-lg mt-2">El Viaje del Grano a Tu Alma.</p>
+    </footer>
+
+    <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
